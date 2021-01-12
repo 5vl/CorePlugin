@@ -43,3 +43,4 @@ CannotFindPlayer: '&4Error: Cannot find the specified player.'
 MissingPermission: '&4&lYou do not have permission to execute this command!'
 Console: '&cYou can only run this command as a player.'
 InvalidArgument: '&4Error: Invalid argument.'
+Discord: '&bhttps://discord.gg/YourDiscordLinkHere' # Please put in your discord link.

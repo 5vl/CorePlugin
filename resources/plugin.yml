@@ -23,3 +23,5 @@ commands:
     description: You can ban people with this!
   unban:
     description: You can unban people with this!
+  discord:
+    description: Send your discord link in chat!

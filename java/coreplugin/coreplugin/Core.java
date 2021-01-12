@@ -1,5 +1,6 @@
 package coreplugin.coreplugin;
 
+import coreplugin.coreplugin.commands.discord;
 import coreplugin.coreplugin.commands.fly;
 import coreplugin.coreplugin.commands.gamemodes.GMA;
 import coreplugin.coreplugin.commands.gamemodes.GMC;
@@ -16,7 +17,7 @@ public final class Core extends JavaPlugin {
     private static Core instance;
     @Override
     public void onEnable() {
-        System.out.println("Core Plugin has been enabled.");
+        System.out.println("Enabed Core Plugin 1.0.0");
         instance = this;
         this.getConfig().options().copyDefaults();
         saveDefaultConfig();
@@ -36,5 +37,6 @@ public final class Core extends JavaPlugin {
         getCommand("kick").setExecutor(new kick());
         getCommand("ban").setExecutor(new ban());
         getCommand("unban").setExecutor(new unban());
+        getCommand("discord").setExecutor(new discord());
     }
 }
