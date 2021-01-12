@@ -1,0 +1,25 @@
+name: CorePlugin
+version: 1.0.0
+main: coreplugin.coreplugin.Core
+api-version: 1.16
+authors: [ 5vl ]
+description: A Core Plugin made by 5vl.
+commands:
+  gmc:
+    description: Shortens /gamemode creative.
+  gma:
+    description: Shortens /gamemode adventure
+  gmsp:
+    description: Shortens /gamemode spectator
+  gms:
+    description: Shortens /gamemode survival
+  fly:
+    description: This command makes you fly!
+  heal:
+    description: This will heal you!
+  kick:
+    description: You can kick people with this!
+  ban:
+    description: You can ban people with this!
+  unban:
+    description: You can unban people with this!

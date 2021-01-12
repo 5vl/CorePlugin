@@ -1,0 +1,45 @@
+# Gamemode messages
+CreativeSelf: '&aYour gamemode has been changed to &cCreative.'
+CreativeSetOther: '&aYou changed the gamemode to &cCreative &afor: &d' # Last color code is the color that the playername will show in.
+CreativeOther: '&aYour gamemode has been changed to &cCreative &aby: &d' # Last color code is the color that the playername will show in.
+
+SurvivalSelf: '&aYour gamemode has been changed to &cSurvival.'
+SurvivalSetOther: '&aYou changed the gamemode to &cSurvival &afor: &d' # Last color code is the color that the playername will show in.
+SurvivalOther: '&aYour gamemode has been changed to &cSurvival &aby: &d' # Last color code is the color that the playername will show in.
+
+SpectatorSelf: '&aYour gamemode has been changed to &cSpectator.'
+SpectatorSetOther: '&aYou changed the gamemode to &cSpectator &afor: &d' # Last color code is the color that the playername will show in.
+SpectatorOther: '&aYour gamemode has been changed to &cSpectator &aby: &d' # Last color code is the color that the playername will show in.
+
+AdventureSelf: '&aYour gamemode has been changed to &cAdventure.'
+AdventureSetOther: '&aYou changed the gamemode to &cAdventure &afor: &d' # Last color code is the color that the playername will show in.
+AdventureOther: '&aYour gamemode has been changed to &cAdventure &aby: &d' # Last color code is the color that the playername will show in.
+
+# Fly messages
+EnableFlySelf: '&aYou have &cenabled &afly.'
+EnableFlyOther: '&aYou have &cenabled &afly for: &d' # Last color code is the color that the playername will show in.
+FlyEnabledOther: '&aYour fly has been &cenabled &aby: &d' # Last color code is the color that the playername will show in.
+
+DisableFlySelf: '&aYou have &cdisabled &afly.'
+DisableFlyOther: '&aYou have &cdisabled &afly for: &d' # Last color code is the color that the playername will show in.
+FlyDisabledOther: '&aYour fly has been &cdisabled &aby: &d' # Last color code is the color that the playername will show in.
+
+# Heal
+HealSelf: '&aYou have &chealed &ayourself.'
+HealOther: '&aYou have &chealed &a:&d' # Last color code is the color that the playername will show in.
+HealedOther: '&aYou have been &chealed &aby: &d' # Last color code is the color that the playername will show in.
+
+# Punishments
+DefaultKick: 'You have been kicked from the server.'
+BroadcastKick: 'has been kicked for: &e' # Last color code is the color that the kick reason will show in.
+
+DefaultBan: '&aYou have been banned from the server.'
+BroadcastBan: 'has been banned for: &e' # Last color code is the color that the ban reason will show in.
+
+BroadcastUnban: 'has been unbanned.'
+
+# Other
+CannotFindPlayer: '&4Error: Cannot find the specified player.'
+MissingPermission: '&4&lYou do not have permission to execute this command!'
+Console: '&cYou can only run this command as a player.'
+InvalidArgument: '&4Error: Invalid argument.'
