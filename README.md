@@ -8,13 +8,13 @@ This is a core plugin by 5vl. I just started coding plugins, and I'm still wokin
 - Almost fully customizable via the config file
 
 Permissions: 
-/gmc - core.gmc
-/gms - core.gms
-/gmsp - core.gmsp
-/gma - core.gma
-/heal - core.heal
-/fly - core.fly
-/ban - core.ban
-/unban - core.unban
-/kick - core.kick
-/discord - none
+- /gmc - core.gmc
+- /gms - core.gms
+- /gmsp - core.gmsp
+- /gma - core.gma
+- /heal - core.heal
+- /fly - core.fly
+- /ban - core.ban
+- /unban - core.unban
+- /kick - core.kick
+- /discord - none
