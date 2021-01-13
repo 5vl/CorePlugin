@@ -10,6 +10,9 @@ import coreplugin.coreplugin.commands.heal;
 import coreplugin.coreplugin.commands.punish.ban;
 import coreplugin.coreplugin.commands.punish.kick;
 import coreplugin.coreplugin.commands.punish.unban;
+import coreplugin.coreplugin.commands.toggle;
+import coreplugin.coreplugin.events.OnPlayerJoin;
+import coreplugin.coreplugin.events.OnPlayerLeave;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -22,6 +25,8 @@ public final class Core extends JavaPlugin {
         this.getConfig().options().copyDefaults();
         saveDefaultConfig();
         PluginManager plm = org.bukkit.Bukkit.getPluginManager();
+        plm.registerEvents(new OnPlayerJoin(), this);
+        plm.registerEvents(new OnPlayerLeave(), this);
         registerCMD();
     }
     public static Core getInstance() {
@@ -38,5 +43,6 @@ public final class Core extends JavaPlugin {
         getCommand("ban").setExecutor(new ban());
         getCommand("unban").setExecutor(new unban());
         getCommand("discord").setExecutor(new discord());
+        getCommand("toggle").setExecutor(new toggle());
     }
 }

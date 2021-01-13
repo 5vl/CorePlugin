@@ -25,3 +25,5 @@ commands:
     description: You can unban people with this!
   discord:
     description: Send your discord link in chat!
+  toggle:
+    description: You can toggle certain features with this!

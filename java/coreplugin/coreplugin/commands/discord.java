@@ -13,9 +13,20 @@ public class discord implements CommandExecutor {
     }
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        String Discord = Core.getInstance().getConfig().getString("Discord");
-        Player p = (Player) sender;
-        p.sendMessage(color(Discord));
+        boolean t;
+        t = toggle.DiscordToggle;
+        if (t) {
+            if (label.equalsIgnoreCase("discord")) {
+                String Discord = Core.getInstance().getConfig().getString("Discord");
+                Player p = (Player) sender;
+                p.sendMessage(color(Discord));
+            }
+        }
+        else {
+            String CommandDisabled = Core.getInstance().getConfig().getString("CommandDisabled");
+            Player p = (Player) sender;
+            p.sendMessage(color(CommandDisabled));
+        }
         return false;
     }
 }

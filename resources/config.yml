@@ -38,9 +38,16 @@ BroadcastBan: 'has been banned for: &e' # Last color code is the color that the 
 
 BroadcastUnban: 'has been unbanned.'
 
-# Other
+# Leave/Join messages.
+CustomJoin: '&7[&a+&7]&b'
+CustomLeave: '&7[&c-&7]&b'
+
+# Errors
 CannotFindPlayer: '&4Error: Cannot find the specified player.'
 MissingPermission: '&4&lYou do not have permission to execute this command!'
 Console: '&cYou can only run this command as a player.'
 InvalidArgument: '&4Error: Invalid argument.'
+CommandDisabled: '&bThis command has been disabled.'
+
+# Other
 Discord: '&bhttps://discord.gg/YourDiscordLinkHere' # Please put in your discord link.
