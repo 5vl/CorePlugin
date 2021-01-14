@@ -12,14 +12,17 @@ import coreplugin.coreplugin.commands.punish.kick;
 import coreplugin.coreplugin.commands.punish.unban;
 import coreplugin.coreplugin.events.OnPlayerJoin;
 import coreplugin.coreplugin.events.OnPlayerLeave;
+import coreplugin.coreplugin.utils.UpdateChecker;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Core extends JavaPlugin {
     private static Core instance;
+    public String updatemsg;
+    String version = this.getDescription().getVersion();
     @Override
     public void onEnable() {
-        System.out.println("Enabed Core Plugin 1.0.0");
+        System.out.println("Enabed Core Plugin " + version);
         instance = this;
         this.getConfig().options().copyDefaults();
         saveDefaultConfig();
@@ -27,6 +30,14 @@ public final class Core extends JavaPlugin {
         plm.registerEvents(new OnPlayerJoin(), this);
         plm.registerEvents(new OnPlayerLeave(), this);
         registerCMD();
+        new UpdateChecker(this, 87756).getLatestVersion(version -> {
+            if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
+                Logger.log(Logger.LogLevel.SUCCESS, "Core Plugin is up to date.");
+            } else {
+                Logger.log(Logger.LogLevel.ERROR, "Plugin is out of date, please download the new version at https://www.spigotmc.org/resources/core-plugin.87756/");
+            }
+
+        });
     }
     public static Core getInstance() {
         return instance;
