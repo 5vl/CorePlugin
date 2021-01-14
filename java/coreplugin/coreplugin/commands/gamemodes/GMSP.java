@@ -1,20 +1,15 @@
 package coreplugin.coreplugin.commands.gamemodes;
 
 import coreplugin.coreplugin.Core;
+import coreplugin.coreplugin.utils.chatcolors;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class GMSP implements CommandExecutor {
-
-    private String color(String string) {
-        return ChatColor.translateAlternateColorCodes('&', string);
-    }
-
+public class GMSP extends chatcolors implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
         if (sender.hasPermission("core.gmsp")) {

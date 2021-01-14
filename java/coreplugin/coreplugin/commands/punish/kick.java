@@ -1,8 +1,8 @@
 package coreplugin.coreplugin.commands.punish;
 
 import coreplugin.coreplugin.Core;
+import coreplugin.coreplugin.utils.chatcolors;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -10,11 +10,7 @@ import org.bukkit.entity.Player;
 
 import java.util.Arrays;
 
-public class kick implements CommandExecutor {
-    private String color(String string) {
-        return ChatColor.translateAlternateColorCodes('&', string);
-    }
-
+public class kick extends chatcolors implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender.hasPermission("core.kick")) {

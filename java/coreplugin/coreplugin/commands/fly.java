@@ -1,17 +1,14 @@
 package coreplugin.coreplugin.commands;
 
 import coreplugin.coreplugin.Core;
+import coreplugin.coreplugin.utils.chatcolors;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class fly implements CommandExecutor {
-    private String color(String string) {
-        return ChatColor.translateAlternateColorCodes('&', string);
-    }
+public class fly extends chatcolors implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
         if (sender.hasPermission("core.fly")) {
             Player p = (Player) sender;

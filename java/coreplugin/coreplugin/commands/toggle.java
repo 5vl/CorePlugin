@@ -1,17 +1,13 @@
 package coreplugin.coreplugin.commands;
 
 import coreplugin.coreplugin.Core;
-import org.bukkit.ChatColor;
+import coreplugin.coreplugin.utils.chatcolors;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class toggle implements CommandExecutor {
-
-    private String color(String string) {
-        return ChatColor.translateAlternateColorCodes('&', string);
-    }
+public class toggle extends chatcolors implements CommandExecutor {
     public static boolean DiscordToggle;
     public static boolean JoinToggle;
     public static boolean LeaveToggle;

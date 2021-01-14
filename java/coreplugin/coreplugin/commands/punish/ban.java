@@ -1,6 +1,7 @@
 package coreplugin.coreplugin.commands.punish;
 
 import coreplugin.coreplugin.Core;
+import coreplugin.coreplugin.utils.chatcolors;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.OfflinePlayer;
@@ -11,11 +12,7 @@ import org.bukkit.entity.Player;
 
 import java.util.Arrays;
 
-public class ban implements CommandExecutor {
-    private String color(String string) {
-        return ChatColor.translateAlternateColorCodes('&', string);
-    }
-
+public class ban extends chatcolors implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender.hasPermission("core.ban")) {
