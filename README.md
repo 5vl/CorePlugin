@@ -9,6 +9,5 @@ Permissions:
 - /unban - core.unban
 - /kick - core.kick
 - /discord - none
-- /toggle - core.toggle
 
 If you have any issues, please contact me on discord: 5vl#4542
