@@ -10,4 +10,6 @@ Permissions:
 - /kick - core.kick
 - /discord - none
 
-If you have any issues, please contact me on discord: 5vl#4542
+If you have any issues, please contact me on discord or make a github issue.
+
+My discord: 5vl#4542
