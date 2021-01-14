@@ -10,7 +10,6 @@ import coreplugin.coreplugin.commands.heal;
 import coreplugin.coreplugin.commands.punish.ban;
 import coreplugin.coreplugin.commands.punish.kick;
 import coreplugin.coreplugin.commands.punish.unban;
-import coreplugin.coreplugin.commands.toggle;
 import coreplugin.coreplugin.events.OnPlayerJoin;
 import coreplugin.coreplugin.events.OnPlayerLeave;
 import org.bukkit.plugin.PluginManager;
@@ -43,6 +42,5 @@ public final class Core extends JavaPlugin {
         getCommand("ban").setExecutor(new ban());
         getCommand("unban").setExecutor(new unban());
         getCommand("discord").setExecutor(new discord());
-        getCommand("toggle").setExecutor(new toggle());
     }
 }

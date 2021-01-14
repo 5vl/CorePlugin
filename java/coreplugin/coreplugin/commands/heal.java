@@ -22,7 +22,7 @@ public class heal extends chatcolors implements CommandExecutor {
                                 ps.setHealth(20);
                                 ps.setFoodLevel(20);
                                 String HealOther = Core.getInstance().getConfig().getString("HealOther");
-                                p.sendMessage(color(HealOther + args[0]));
+                                p.sendMessage(color(HealOther + " " + args[0]));
                             } else {
                                 String InvalidArgument = Core.getInstance().getConfig().getString("InvalidArgument");
                                 p.sendMessage(color(InvalidArgument));
@@ -34,8 +34,8 @@ public class heal extends chatcolors implements CommandExecutor {
                             ps.setFoodLevel(20);
                             String HealOther = Core.getInstance().getConfig().getString("HealOther");
                             String HealedOther = Core.getInstance().getConfig().getString("HealedOther");
-                            p.sendMessage(color(HealOther + args[0]));
-                            ps.sendMessage(color(HealedOther + p.getPlayerListName()));
+                            p.sendMessage(color(HealOther + " " + args[0]));
+                            ps.sendMessage(color(HealedOther + " " + p.getPlayerListName()));
                         }
                     }
                     catch (Exception e) {

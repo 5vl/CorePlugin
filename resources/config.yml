@@ -1,3 +1,7 @@
+# Toggle features
+DiscordCommand: true
+CustomJoinAndLeave: true
+
 # Gamemode messages
 CreativeSelf: '&aYour gamemode has been changed to &cCreative.'
 CreativeSetOther: '&aYou changed the gamemode to &cCreative &afor: &d' # Last color code is the color that the playername will show in.
@@ -26,8 +30,8 @@ FlyDisabledOther: '&aYour fly has been &cdisabled &aby: &d' # Last color code is
 
 # Heal
 HealSelf: '&aYou have &chealed &ayourself.'
-HealOther: '&aYou have &chealed &a:&d' # Last color code is the color that the playername will show in.
-HealedOther: '&aYou have been &chealed &aby: &d' # Last color code is the color that the playername will show in.
+HealOther: '&aYou have &chealed&a:&d' # Last color code is the color that the playername will show in.
+HealedOther: '&aYou have been &chealed &aby:&d' # Last color code is the color that the playername will show in.
 
 # Punishments
 DefaultKick: 'You have been kicked from the server.'

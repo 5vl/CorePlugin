@@ -1,7 +1,6 @@
 package coreplugin.coreplugin.events;
 
 import coreplugin.coreplugin.Core;
-import coreplugin.coreplugin.commands.toggle;
 import coreplugin.coreplugin.utils.chatcolors;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -12,7 +11,7 @@ public class OnPlayerLeave extends chatcolors implements Listener {
     @EventHandler
     public void OnPlayerLeave(PlayerQuitEvent event){
         boolean t;
-        t = toggle.LeaveToggle;
+        t = Boolean.parseBoolean(Core.getInstance().getConfig().getString("CustomJoinAndLeave"));
         if (t) {
             Player p = event.getPlayer();
             String CustomLeave = Core.getInstance().getConfig().getString("CustomLeave");
