@@ -12,6 +12,7 @@ import coreplugin.coreplugin.commands.punish.kick;
 import coreplugin.coreplugin.commands.punish.unban;
 import coreplugin.coreplugin.events.OnPlayerJoin;
 import coreplugin.coreplugin.events.OnPlayerLeave;
+import coreplugin.coreplugin.utils.MetricsLite;
 import coreplugin.coreplugin.utils.UpdateChecker;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -37,6 +38,8 @@ public final class Core extends JavaPlugin {
             }
 
         });
+        int pluginId = 10001;
+        MetricsLite metrics = new MetricsLite(this, pluginId);
     }
     public static Core getInstance() {
         return instance;
