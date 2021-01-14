@@ -1,0 +1,2 @@
+# This is the file that checks for updates from version 1.1.0+
+1.1.0: Core Plugin is up to date.
