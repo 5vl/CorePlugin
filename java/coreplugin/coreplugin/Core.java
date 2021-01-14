@@ -18,7 +18,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Core extends JavaPlugin {
     private static Core instance;
-    public String updatemsg;
     String version = this.getDescription().getVersion();
     @Override
     public void onEnable() {
@@ -34,7 +33,7 @@ public final class Core extends JavaPlugin {
             if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
                 Logger.log(Logger.LogLevel.SUCCESS, "Core Plugin is up to date.");
             } else {
-                Logger.log(Logger.LogLevel.ERROR, "Plugin is out of date, please download the new version at https://www.spigotmc.org/resources/core-plugin.87756/");
+                Logger.log(Logger.LogLevel.ERROR, "Plugin is out of date, please download the new version at: https://www.spigotmc.org/resources/core-plugin.87756/ If this is a recently released version, the spigot API might not have updated.");
             }
 
         });
