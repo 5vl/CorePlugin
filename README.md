@@ -1,3 +1,5 @@
+NEVER BEING UPDATED ANYMORE! I JUST SAW SOMEONE STAR THIS SO JUST FYI
+
 Permissions: 
 - /gmc - core.gmc
 - /gms - core.gms
